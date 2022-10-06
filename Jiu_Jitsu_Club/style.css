@@ -1,0 +1,461 @@
+/* font-family: 'Kreon', serif;
+font-family: 'Roboto Condensed', sans-serif; */
+* {
+    box-sizing: border-box;
+}
+h1 {
+    font-family: 'Roboto Condensed', sans-serif; 
+}
+h2, h3, p, a {
+    font-family: 'Roboto Condensed', sans-serif; 
+    text-decoration: none;
+}
+#bar {
+    display: none;
+}
+body {
+    width: 100%;
+    margin: 0px;
+}
+header {
+    background-color:white;
+    width: 100%;
+    padding-top: 3.5vh;
+    padding-bottom: 3.5vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+nav {
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 18px;
+    justify-self: start;
+    
+}
+.navLink {
+    
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    color: darkslategray;
+    transition: color 500ms ease-in;
+    -webkit-transition: color 500ms ease-in;
+    -moz-transition: color 500ms ease-in;
+    -ms-transition: color 500ms ease-in;
+    -o-transition: color 500ms ease-in;
+}
+.navLink:hover {
+    color: #FFBF00
+}
+.header-title {
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 32px;
+    font-weight: 500;
+    color: black;
+}
+#joinButton {
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: #191919;
+    font-size: 18px;
+    border: 3px solid #191919;
+    border-radius: 0.5vw;
+    color: white;
+    padding: 3vh 4vw;
+    justify-self: end;
+    transition: color 700ms ease-in, background-color 1s ease-in;
+    -webkit-transition: color 700ms ease-in, background-color 1s ease-in;
+    -moz-transition: color 700ms ease-in, background-color 1s ease-in;
+    -ms-transition: color 700ms ease-in, background-color 1s ease-in;
+    -o-transition: color 700ms ease-in, background-color 1s ease-in;
+    -webkit-border-radius: 0.5vw;
+    -moz-border-radius: 0.5vw;
+    -ms-border-radius: 0.5vw;
+    -o-border-radius: 0.5vw;
+}
+#joinButton:hover {
+    color:  #191919;
+    background-color:  #FFBF00;
+    transition: color 700ms ease-in;
+    -webkit-transition: color 700ms ease-in;
+    -moz-transition: color 700ms ease-in;
+    -ms-transition: color 700ms ease-in;
+    -o-transition: color 700ms ease-in;
+}
+#joinButton:active {
+    color: #9FD8CB;
+}
+main {
+    width: 100%;
+}
+.Opening {
+    width: 100%;
+    height: 93vh;
+    text-align: center;
+    line-height: 1.6;
+    background-image: url("./banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 20vh 20vw;
+    opacity: 0.75; /**/
+}
+p {
+    color: white;
+    font-size: 22px;
+}
+.Opening p {
+    text-shadow:  -1px -1px 5px black, 1px 1px 5px black ;
+}
+h1 {
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 50px;
+    color: white;
+    margin: 0px;
+    text-shadow:  -1px -1px 5px black, 1px 1px 5px black ;
+}
+.classesBox {
+    background-color: black;
+    width: 100%;
+    padding: 17vh 2vw;
+    text-align: center;
+    color: white;
+
+}
+.classesBox h2 {
+    margin: 0px;
+    font-size: 55px;
+    padding: 0px;
+    padding-bottom: 17vh;
+}
+.ClassToOffer {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(32vw, 1fr));
+}
+.cards {
+    position: relative;
+    opacity: 0.9;
+    padding: 3vh 3vh;
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+}
+.cards:hover {
+    transform: translateY(-4vh);
+    -webkit-transform: translateY(-4vh);
+    -moz-transform: translateY(-4vh);
+    -ms-transform: translateY(-4vh);
+    -o-transform: translateY(-4vh);
+    text-shadow:  -1px -1px 5px black, 1px 1px 5px black ;
+}
+.cards h2 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 40px;
+    text-shadow:  -1px -1px 5px black, 1px 1px 5px black ;
+}
+.photo {
+    width: 100%;
+    border-radius: 0.5vw;
+    -webkit-border-radius: 0.5vw;
+    -moz-border-radius: 0.5vw;
+    -ms-border-radius: 0.5vw;
+    -o-border-radius: 0.5vw;
+}
+.text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+#secondButton {
+    border-radius: 0.5vw;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    padding: 4vh 5vw;
+    background-color: #FFBF00;
+    opacity: 0.9;
+    font-size: 20px;
+    font-weight: 500;
+    transition: opacity 500ms ease-in, color 700ms ease-in;
+    -webkit-transition: opacity 500ms ease-in, color 700ms ease-in;
+    -moz-transition: opacity 500ms ease-in, color 700ms ease-in;
+    -ms-transition: opacity 500ms ease-in, color 700ms ease-in;
+    -o-transition: opacity 500ms ease-in, color 700ms ease-in;
+    -webkit-border-radius: 0.5vw;
+    -moz-border-radius: 0.5vw;
+    -ms-border-radius: 0.5vw;
+    -o-border-radius: 0.5vw;
+}
+#secondButton:hover, #secondButton:active {
+    opacity: 1;
+    color: white;
+    transition: color 700ms ease-in;
+    -webkit-transition: color 700ms ease-in;
+    -moz-transition: color 700ms ease-in;
+    -ms-transition: color 700ms ease-in;
+    -o-transition: color 700ms ease-in;
+}
+#secondButton:active {
+    color: #9FD8CB;
+}
+#last {
+    padding-top: 3vh;
+}
+#about {
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+    text-align: center;
+    padding: 0vw 5vw;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+#about p {
+    margin: 0px;
+    color: black;
+    padding-bottom: 2vh;
+}
+
+#quote {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    background-image: url("./e.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    padding: 0vh 4vw;
+    opacity: 0.75; /**/
+}
+#quote h2, p {
+    margin: 0px;
+}
+#quote h2 {
+    font-size: 55px;
+    color: rgb(91, 87, 87);
+    padding-bottom: 5vh;
+}
+#quote p {
+    font-weight: 400;
+    font-size: 18px;
+}
+.foo {
+    text-align: left;
+}
+
+.foo h2 {
+    font-size: 55px;
+    text-shadow:  -1px -1px 5px black, 1px 1px 5px black ;
+    margin: 0px;
+    padding-bottom: 5vh;
+}
+.foo p {
+    font-size: 22px;
+    text-shadow:  -1px -1px 5px black, 1px 1px 5px black ;
+    padding-bottom: 2vh;
+}
+
+
+footer {
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-rows: auto;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    color: white;
+    padding: 0vw 5vw;
+}
+ .foo {
+     height: 40vh; 
+     grid-area: 1 / 1 / 2 / 2;
+     align-self: center;
+ }
+ .foo p {
+     line-height: 1.6;
+ }
+#only {
+    grid-area: 1 / 2 / 2 / 3 ;
+    opacity: 0.9;
+    padding: 3vh 4vw;
+    color: black;
+    background-color:  #FFBF00;
+    align-self: start;
+    border-radius: 0.5vw;
+    -webkit-border-radius: 0.5vw;
+    -moz-border-radius: 0.5vw;
+    -ms-border-radius: 0.5vw;
+    -o-border-radius: 0.5vw;
+    transition: color 700ms ease-in, opacity 700ms ease-in;
+    -webkit-transition: color 700ms ease-in, opacity 700ms ease-in;
+    -moz-transition: color 700ms ease-in, opacity 700ms ease-in;
+    -ms-transition: color 700ms ease-in, opacity 700ms ease-in;
+    -o-transition: color 700ms ease-in, opacity 700ms ease-in;
+}
+#only:hover {
+    color: white;
+    opacity: 1;
+    transition: color 700ms ease-in;
+    -webkit-transition: color 700ms ease-in;
+    -moz-transition: color 700ms ease-in;
+    -ms-transition: color 700ms ease-in;
+    -o-transition: color 700ms ease-in;
+}
+#only:active {
+    color: #9FD8CB;
+}
+@media only screen and (max-width: 1023px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 810px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 590px) {
+    h1 {
+        font-size: 24px;
+    }
+} 
+@media only screen and (max-width: 880px) {
+    .Opening p {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .Opening p {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .Opening p {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .Opening p {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 730px) {
+    #joinButton {
+        display: none;
+    }
+    .header-title {
+        grid-area:  1 / 3 / 2 / 4;
+        align-self: center;
+        justify-self: center;
+    }
+    nav {
+        grid-area: 1 /  1 / 2 / 3;
+    }
+    
+}
+@media only screen and (max-width: 550px) {
+    #bar {
+        display: inline-block;
+        width: 10%;
+        grid-area: 1 / 1 / 2 / 3 ;
+        align-self: center;
+        justify-self: start;
+        padding: 0vh 0.2vw; 
+    }
+    nav {
+        display: none;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .header-title {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    
+    .ClassToOffer  {
+        grid-template-columns: repeat(auto-fill, minmax(49vw, 1fr));
+    }
+}
+@media only screen and (max-width: 499px) {
+    .text h2 {
+        font-size: 24px;    }
+}
+@media only screen and (max-width: 403px) {
+    .text h3 {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .classesBox > h2 {
+        padding-bottom: 5vh;
+        font-size: 28px;
+    }
+    .classesBox {
+        padding: 10vh 2vw;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #about p {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 749px) {
+    #quote h2 {
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 749px) {
+    #quote h2 {
+        font-size: 23px;
+    }
+}
+@media only screen and (max-width:689px) {
+    footer {    
+        display: inline-block;
+        text-align: center;
+    }
+    .foo {
+        padding-top: 4vh;
+        display: grid;
+        place-content: center;
+        padding-bottom: 4vh;
+    }
+    .foo h2 {
+        font-size: 32px;
+    }
+    .foo p {
+        font-size: 14px;
+    }
+}
+ 
